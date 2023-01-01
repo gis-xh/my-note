@@ -33,7 +33,7 @@ theme:
     repo: fontawesome/brands/github
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url: https://github.com/gis-xh/gis-xh.github.io/my-note # 右上角点击跳转的链接
+repo_url: https://github.com/gis-xh/my-note # 右上角点击跳转的链接
 repo_name: my-note # 右上角的名字
 ## [bottom-left corner]
 copyright: Copyright &copy; 2022 gis-xh # 左下角的版权声明
