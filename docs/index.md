@@ -21,8 +21,8 @@
 ### 5 Python学习笔记：[Python-Notes](./python)
 
 - [Conda 学习记录](./python/01conda)
-- [NumPy 学习记录](./python/02数据分析与展示/numpy)
-- [Django 学习记录](./python/03Django)
+- [NumPy 学习记录](./python/02data_analysis/numpy)
+- [Django 学习记录](./python/03django)
 
 ### 6 Linux学习笔记：[Linux-Notes](./linux)
 

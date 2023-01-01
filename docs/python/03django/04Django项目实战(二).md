@@ -92,4 +92,4 @@ admin.site.register(mallManagement)
 
 上一节：[03 Django 项目实战（一）](./03Django项目实战(一).md)
 
-下一节：[05 Django 项目实战（三）](./05Django项目实战(三).md)
+下一节：暂无

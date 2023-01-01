@@ -16,7 +16,7 @@
 
 ### 2 数据分析与展示：[mooc](./02数据分析与展示/)
 
-- [NumPy 学习记录](./02数据分析与展示/numpy)
+- [NumPy 学习记录](./02data_analysis/numpy)
 - 
 
 ### 3 Django 学习笔记：[django](./03Django/)
