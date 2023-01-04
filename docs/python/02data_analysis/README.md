@@ -2,7 +2,7 @@
 
 ## 介绍
 
-此处为笔记仓库 Python 专题部分的数据分析内容。
+&emsp;&emsp;此处为笔记仓库 Python 专题部分的数据分析内容，主要内容来自 MOOC 嵩天老师的 Python 数据分析教程。
 
 
 
@@ -17,10 +17,12 @@
 
 ## 环境配置
 
+&emsp;&emsp;本篇的内容，均是在虚拟环境 `data01` 中进行的。
+
 > 创建虚拟环境
 
 ```sh
-conda create -n data01 pytho=3.9
+conda create -n data01 python=3.9
 ```
 
 > 激活虚拟环境
