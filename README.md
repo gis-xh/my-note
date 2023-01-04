@@ -2,8 +2,9 @@
 
 ## 介绍
 
-这是由 亚瑟 制作的一个使用 markdown 的笔记仓库。
-本文在线地址：
+&emsp;&emsp;这是由 亚瑟 个人制作的一个使用 markdown 的笔记仓库。
+
+- 本文在线地址：https://gis-xh.github.io/my-note/
 
 ## 参与贡献
 
