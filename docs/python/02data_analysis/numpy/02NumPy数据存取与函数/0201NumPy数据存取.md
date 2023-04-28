@@ -81,12 +81,31 @@ print(b)
 
 ## 2 多维数组的存取
 
+### 2.1 存储数据
 
+```python
+a.tofile(frame="b.txt", sep='', format='%d')
+```
 
+- `frame`：存储的文件名或字符串名，将数据存放在 `b.txt` 文件内
+- `sep`：数据分割字符串，以空格进行分割
+- `format`：存储后数据的格式，设置为整数形式
 
+### 2.2 读取数据
+
+```python
+np.fromfile("b.txt", dtype=np.int32, sep=",")
+```
+
+- `frame`：可省略，直接写要读取的文件名，读取 `b.txt` 文件内的数据
+- `dtype`：读取数据的数据类型
+- `count`：读取数据个数，默认为 -1 表示读入整个文件，可省略
+- `sep`：同上 2.1 节
+
+【注】：在读取存入数据时，必须知晓数据的维度和元素类型
 
 
 
 上一节：[0103 NumPy Quick Start 翻译](../01NumPy库入门/0103NumPyQuickStart.md)
 
-下一节：无
+下一节：[0202 WordCloud 词云](./0202WordCloud.md)

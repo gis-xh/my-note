@@ -49,25 +49,7 @@ extra:
 
 # [Navigtion] 导航栏
 nav:
-  # - 讲稿: 
-  #   - LECTURE/index.md 
-  #   - Linux: 
-  #     - Linux讲座: LECTURE/Linux/linux.md
-  #     - 命令行入门精简版: LECTURE/Linux/commands-concise.md
-  #   - 个人信息:
-  #     - 3/Info/accounts.md
-  # - 转载:
-  #   - REPRODUCE/index.md
-  #   - REPRODUCE/how-to-ask-questions-the-smart-way.md
-  #   - REPRODUCE/tim-cook-at-duke.md
-  #   - REPRODUCE/my-best-teacher.md
-  # - 关于:
-  #   - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
-  #   - 个人履历: ABOUT/cv-full.md
-  #   - 支持作者: ABOUT/support.md
-  #   - 文章编写帮助: ABOUT/help.md
-  #   - 网站构建: ABOUT/build.md
-  #   - 测试文档: ABOUT/test.md
+
 
 # [Extensions] 扩展
 plugins:

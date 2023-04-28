@@ -2,7 +2,7 @@
 
 ## 1 安装 Miniconda / Anaconda
 
-&emsp;&emsp;书接上回：[Win11 安装配置 Miniconda](./Win11安装配置Miniconda全过程记录.md)
+&emsp;&emsp;书接上回：[Win11 安装配置 Miniconda](../python/01conda/Win11-Miniconda-install.md)
 
 
 
@@ -34,15 +34,15 @@ conda activate pytorchtest
 
 ### 3.1 安装 CUDA
 
-&emsp;&emsp;详情请见：[Keras 安装配置 - 安装 CUDA](./Keras安装配置.md#6-安装-cuda)
+&emsp;&emsp;详情请见：[Keras 安装配置 - 安装 CUDA](./Keras-install.md#6-安装-cuda)
 
 ### 3.2 安装 cuDNN
 
-&emsp;&emsp;详情请见：[Keras 安装配置 - 安装 cuDNN](./Keras安装配置.md#7-安装-cudnn)
+&emsp;&emsp;详情请见：[Keras 安装配置 - 安装 cuDNN](./Keras-install.md#7-安装-cudnn)
 
 ### 3.3 配置环境变量
 
-&emsp;&emsp;详情请见：[Keras 安装配置 - 配置环境变量](./Keras安装配置.md#8-配置环境变量)
+&emsp;&emsp;详情请见：[Keras 安装配置 - 配置环境变量](./Keras-install.md#8-配置环境变量)
 
 
 
@@ -119,7 +119,5 @@ print(torch.cuda.is_available())
 
 ## 参考文章
 
-1. [Win11 安装配置 Miniconda](./Win11安装配置Miniconda全过程记录.md)
-2. [Keras 安装配置](./Keras安装配置.md)
-3. [CSDN - 深度学习环境搭建超级详解（Miniconda、pytorch安装）](https://blog.csdn.net/weixin_44263674/article/details/125516305)
+1. [CSDN - 深度学习环境搭建超级详解（Miniconda、pytorch安装）](https://blog.csdn.net/weixin_44263674/article/details/125516305)
 

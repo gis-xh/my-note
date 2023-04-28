@@ -8,9 +8,7 @@
 
 ### 1 Conda 学习笔记：[conda](./01conda/)
 
-- [Keras 安装配置](./01conda/Keras安装配置.md)
-- [PyTorch 安装配置](./01conda/PyTorch安装配置.md)
-- [Win11 安装配置 Miniconda 全过程记录](./01conda/Win11安装配置Miniconda全过程记录.md)
+- [Win11 安装配置 Miniconda 全过程记录](./01conda/Win11-Miniconda-install.md)
 
 ### 2 数据分析与展示：[data_analysis](./02data_analysis/)
 

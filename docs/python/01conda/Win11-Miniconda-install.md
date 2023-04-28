@@ -10,7 +10,7 @@
 
 &emsp;&emsp;下载链接：[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)【这里我们选择 python3.9 版本】
 
-![](miniconda_files/1.jpg)
+![](img/1.jpg)
 
 
 
@@ -20,15 +20,15 @@
 
 &emsp;&emsp;在安装时，右击 → 以管理员身份运行。同时，软件默认安装在 C 盘，所以需要修改文件安装位置。【要求：位置不在 C 盘，且文件名为英文。】
 
-![](miniconda_files/2.jpg)
+![](img/2.jpg)
 
-![](miniconda_files/3.jpg)
+![](img/3.jpg)
 
 ### 3.2 安装成功
 
-![](miniconda_files/4.jpg)
+![](img/4.jpg)
 
-![](miniconda_files/5.jpg)
+![](img/5.jpg)
 
 ### 3.3 添加环境变量
 
@@ -36,7 +36,7 @@
 
 - 右击此电脑 → 属性 → 高级系统设置 → 环境变量
 
-![](miniconda_files/6.jpg)
+![](img/6.jpg)
 
 - 添加环境变量 Path
 
@@ -48,7 +48,7 @@ D:\program\Miniconda3\Scripts
 D:\program\Miniconda3\Library\bin
 ```
 
-![](miniconda_files/7.jpg)
+![](img/7.jpg)
 
 &emsp;&emsp;到这里才算是正式完成 miniconda 的安装，即软件安装 + 环境配置，下面我们需要对 conda 进行初始化。
 
@@ -62,7 +62,7 @@ D:\program\Miniconda3\Library\bin
 conda init powershell
 ```
 
-![](miniconda_files/8.jpg)
+![](img/8.jpg)
 
 > 初始化 cmd
 
@@ -70,7 +70,7 @@ conda init powershell
 conda init cmd.exe
 ```
 
-![](miniconda_files/9.jpg)
+![](img/9.jpg)
 
 
 
@@ -84,7 +84,7 @@ conda init cmd.exe
 conda config --set show_channel_urls yes
 ```
 
-![](miniconda_files/10.jpg)
+![](img/10.jpg)
 
 ### 5.2 生成下载源文件的配置文件
 
@@ -92,7 +92,7 @@ conda config --set show_channel_urls yes
 
 &emsp;&emsp;在 C 盘用户目录下找到文件后，右击使用记事本打开。
 
-![](miniconda_files/11.jpg)
+![](img/11.jpg)
 
 > 修改后内容
 
@@ -130,7 +130,7 @@ conda clean -i
 
 &emsp;&emsp;找到 miniconda 目录下的 envs 文件夹，右击打开属性。
 
-![](miniconda_files/12.jpg)
+![](img/12.jpg)
 
 
 
@@ -142,7 +142,7 @@ conda clean -i
 conda info
 ```
 
-![](miniconda_files/13.jpg)
+![](img/13.jpg)
 
 ### 6.2 创建并查看虚拟环境
 
@@ -160,7 +160,7 @@ conda create -n CVEOdemo02 python=3.9
 conda info -e
 ```
 
-![](miniconda_files/14.jpg)
+![](img/14.jpg)
 
 ### 6.3 移除虚拟环境
 
@@ -180,7 +180,7 @@ conda remove -n CVEOdemo02 --all
 conda activate CVEOdemo02
 ```
 
-![](miniconda_files/15.jpg)
+![](img/15.jpg)
 
 > 关闭虚拟环境
 
@@ -190,7 +190,7 @@ conda activate CVEOdemo02
 conda deactivate CVEOdemo02
 ```
 
-![](miniconda_files/16.jpg)
+![](img/16.jpg)
 
 
 
