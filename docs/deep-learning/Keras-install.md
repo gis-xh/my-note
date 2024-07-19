@@ -10,23 +10,19 @@
 
 ### 2.1 创建虚拟环境
 
-> 创建名为 venv 的 python3.9 虚拟环境
+> 创建名为 krs01 的 python3.8 虚拟环境
 
 ```shell
-conda create -n venv python=3.9
+conda create -n krs01 python=3.8
 ```
-
-![](img/1.jpg)
 
 ### 2.2 激活虚拟环境
 
 > 激活虚拟环境
 
 ```shell
-conda activate venv
+conda activate krs01
 ```
-
-![](img/2.jpg)
 
 
 
@@ -37,7 +33,7 @@ conda activate venv
 > 使用 conda 在对应的虚拟环境中安装
 
 ```shell
-conda install -n venv ipython notebook
+conda install -n krs01 ipython notebook
 ```
 
 ![](img/3.jpg)
@@ -67,39 +63,30 @@ jupyter notebook
 ### 4.1 安装主要依赖包
 
 ```shell
-conda install -n venv numpy matplotlib pandas pydotplus h5py scikit-learn
+conda install -n krs01 numpy matplotlib pandas pydotplus h5py scikit-learn
 ```
 
 ![](img/6.jpg)
 
 ```shell
-conda install -n venv scipy mkl-service libpython m2w64-toolchain
+conda install -n krs01 scipy mkl-service libpython m2w64-toolchain
 ```
 
 ![](img/7.jpg)
 
 ### 4.2 安装 TensorFlow
 
-> 安装 graphviz
-
-```shell
-conda install -n venv graphviz
-```
-
-> 安装 Theano
-
-```shell
-pip install --ignore-installed --upgrade theano
-```
-
 > 安装 TensorFlow
 
 ```shell
-pip install --ignore-installed --upgrade tensorflow==2.10.0
+pip install --ignore-installed --upgrade tensorflow==2.10.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-- 注1：在安装 TensorFlow 时，Keras 也会随之安装，不用单独安装，且当前的版本中，TensorFlow 会同时安装 CPU 和 GPU 两个版本。
-- 注2：`--ignore-installed --upgrade` &emsp;忽略已安装的升级
+- 在安装 TensorFlow 时，Keras 也会随之安装，不用单独安装，且当前的版本中，TensorFlow 会同时安装 CPU 和 GPU 两个版本。
+- `--ignore-installed --upgrade` ：忽略已安装的升级
+- `-i https://pypi.tuna.tsinghua.edu.cn/simple `：切换清华源
+
+https://www.tensorflow.org/install/source_windows#gpu
 
 > 用 conda 安装 CUDA、cuDNN
 
@@ -127,9 +114,11 @@ nvidia-smi
 
 ![](img/8.jpg)
 
-### 5.2 [CUDA 安装](https://developer.nvidia.com/cuda-toolkit-archive)
+### 5.2 官网下载
 
-![](img/9.jpg)
+- 官网：[CUDA 11.2 下载](https://developer.nvidia.com/cuda-11.2.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10)
+
+![image-20230428201253558](./img/image-20230428201253558.png)
 
 ### 5.3 安装注意
 
@@ -141,19 +130,19 @@ nvidia-smi
 
 - 选择自定义安装
 
-![image-20220726105411640](./img/image-20220726105411640.png)
+![image-20230428193829668](./img/image-20230428193829668.png)
 
 - 取消安装 Visual Studio Integration 组件，防止后续报错
 
-![image-20220726111111967](./img/image-20220726111111967.png)
+![image-20230428194413913](./img/image-20230428194413913.png)
 
 - 使用默认安装路径，不做修改
 
-![image-20220726111331816](./img/image-20220726111331816.png)
+![image-20230428194440733](./img/image-20230428194440733.png)
 
 > 检查是否安装成功
 
-- 检查当前 C版本指令
+- 检查当前 CUDA 版本指令
 
 ```shell
 nvcc -V
@@ -161,15 +150,15 @@ nvcc -V
 
 - 输出版本即为成功
 
-![image-20220726112544663](img/image-20220726112544663.png)
+![image-20230428203435904](./img/image-20230428203435904.png)
 
 
 
 ## 6 安装 cuDNN
 
-### 6.1 cuDNN 官网
+### 6.1 官网下载
 
-- 官网：[cuDNN下载](https://developer.nvidia.com/zh-cn/cudnn)，这里 <font style="color:red">必须登录账号</font> 才能继续下载。
+- 官网：[cuDNN 下载](https://developer.nvidia.com/zh-cn/cudnn)，这里 <font style="color:red">必须登录账号</font> 才能继续下载。
 
 ![image-20220726135042391](img/image-20220726135042391.png)
 
@@ -179,9 +168,9 @@ nvcc -V
 
 ### 6.2 下载对应版本
 
-&emsp;&emsp;[cuDNN下载](https://developer.nvidia.com/rdp/cudnn-archive)，因为之前安装的 CUDA 版本号为 11.6，所以我们选择对应版本的 cuDNN 进行下载。
+&emsp;&emsp;[cuDNN下载](https://developer.nvidia.com/rdp/cudnn-archive)，因为之前安装的 CUDA 版本号为 11.2，所以我们选择对应版本的 cuDNN 进行下载。
 
-![image-20220726135657176](img/image-20220726135657176.png)
+![image-20230428201412685](./img/image-20230428201412685.png)
 
 ### 6.3 安装 cuDNN
 
@@ -189,34 +178,36 @@ nvcc -V
 
 `lib` 相关文件需要复制到 `lib\x64` 目录中。
 
-- cuDNN 解压包内容
+1、`cuDNN8.1.0` 解压包内容
 
-![image-20220726144717844](img/image-20220726144717844.png)
+![image-20230428202404924](./img/image-20230428202404924.png)
 
-- CUDA Development 安装目录内容
+2、CUDA Development 安装目录内容
 
 ![image-20220726145523088](img/image-20220726145523088.png)
 
+3、逐个复制内容到对应目录中
 
+![image-20230428202655263](./img/image-20230428202655263.png)
 
 ## 7 配置环境变量
 
 &emsp;&emsp;在成功安装 CUDA 后，系统会自动添加环境变量
 
-![image-20230427120607574](./img/image-20230427120607574.png)
+![image-20230428201014850](./img/image-20230428201014850.png)
 
 > 在环境变量中添加如下内容
 
 &emsp;&emsp;如若在系统环境变量中没有，则需要自行添加如下内容。【注：此处安装目录以实际情况为准】
 
 ```
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\libnvvp
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\lib
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp
 ```
 
-![image-20220726145324709](img/image-20220726145324709.png)
+![image-20230428201050040](./img/image-20230428201050040.png)
 
 
 
@@ -251,9 +242,10 @@ print('keras ' + keras.__version__)
 
 ## 参考文章
 
-1. [CSDN - CUDA安装](https://blog.csdn.net/oxygenh2o/article/details/122145588)
-2. [CSDN - CUDA安装教程（超详细）](https://blog.csdn.net/m0_45447650/article/details/123704930)
-3. [CSDN - 深度学习环境搭建超级详解（Miniconda、pytorch安装）](https://blog.csdn.net/weixin_44263674/article/details/125516305)
-4. [CSDN - TensorFlow 2.8.0安装 + Miniconda + GPU支持](https://blog.csdn.net/encbkakw1/article/details/123702213)
-5. [知乎 - 深度学习GPU环境CUDA详细安装过程（简单快速有效）](https://zhuanlan.zhihu.com/p/358737417)
+1. [Build from source on Windows  | TensorFlow](https://www.tensorflow.org/install/source_windows#cpu)
+2. [CSDN - CUDA安装](https://blog.csdn.net/oxygenh2o/article/details/122145588)
+3. [CSDN - CUDA安装教程（超详细）](https://blog.csdn.net/m0_45447650/article/details/123704930)
+4. [CSDN - 深度学习环境搭建超级详解（Miniconda、pytorch安装）](https://blog.csdn.net/weixin_44263674/article/details/125516305)
+5. [CSDN - TensorFlow 2.8.0安装 + Miniconda + GPU支持](https://blog.csdn.net/encbkakw1/article/details/123702213)
+6. [知乎 - 深度学习GPU环境CUDA详细安装过程（简单快速有效）](https://zhuanlan.zhihu.com/p/358737417)
 
