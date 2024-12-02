@@ -160,7 +160,7 @@ supervisorctl -c ~/etc/supervisord.conf update
 
 
 <div style="aligin">
-	<img src="./errors/1.png">
+	<img src="./imgs/1.png">
 </div>
 
 #### 2.2.2 权限冲突
@@ -170,7 +170,7 @@ supervisorctl -c ~/etc/supervisord.conf update
 
 
 <div style="aligin">
-	<img src="./errors/2.png">
+	<img src="./imgs/2.png">
 </div>
 
 
@@ -190,7 +190,7 @@ kill -9 对应进程号
 ```
 
 <div style="aligin">
-	<img src="./errors/3.png">
+	<img src="./imgs/3.png">
 </div>
 
 <p style="color:red;">
@@ -210,7 +210,7 @@ cd ~/etc/supervisor/var/log/
 ```
 
 <div style="aligin">
-	<img src="./errors/4.png">
+	<img src="./imgs/4.png">
 </div>
 
 > 查看错误日志
@@ -224,7 +224,7 @@ cat gunicorn-stderr.err
 </p>
 
 <div style="aligin">
-	<img src="./errors/5.png">
+	<img src="./imgs/5.png">
 </div>
 
 #### 2.2.4 修改文件夹所有者
@@ -242,7 +242,7 @@ sudo chown -R cveo:cveo backend
 ```
 
 <div style="aligin">
-	<img src="./errors/6.png">
+	<img src="./imgs/6.png">
 </div>
 
 
@@ -265,7 +265,7 @@ unlink /home/cveo/etc/supervisor/var/supervisor.sock
 ```
 
 <div style="aligin">
-	<img src="./errors/7.png">
+	<img src="./imgs/7.png">
 </div>
 
 > 杀死当前的 supervisord 进程

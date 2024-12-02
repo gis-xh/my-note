@@ -35,7 +35,7 @@ adduser cveo
 ```
 
 <div align="center">
-	<img src="./pics/adduser.png">
+	<img src="./imgs/adduser.png">
 </div>
 
 
@@ -108,7 +108,7 @@ ll
 ```
 
 <div align="center">
-	<img src="./pics/content.png">
+	<img src="./imgs/content.png">
 </div>
 
 
@@ -193,7 +193,7 @@ python3 -V
 ```
 
 <div align="center">
-	<img src="./pics/py39_install.png">
+	<img src="./imgs/py39_install.png">
 </div>
 
 ### 4.2 安装 pipenv
@@ -208,7 +208,7 @@ python3 -V
 &emsp;&emsp;因为在安装中为了安全起见，我们将安装在当前用户目录下，需要先添加环境变量，否则会报如下错误。
 
 <div align="center">
-	<img src="./pics/pipenv_warning.png">
+	<img src="./imgs/pipenv_warning.png">
 </div>
 
 
@@ -256,7 +256,7 @@ pipenv --python3.9
 &emsp;&emsp;若项目根目录下有 requirement.txt 文件，pipenv 会读取内部信息生成 Pipfile 文件存放插件版本信息。
 
 <div align="center">
-	<img src="./pics/venv.png">
+	<img src="./imgs/venv.png">
 </div>
 
 #### 4.3.2 修改 pipenv 安装镜像源
@@ -280,7 +280,7 @@ url = "https://mirrors.aliyun.com/pypi/simple/"
 ```
 
 <div align="center">
-	<img src="./pics/pipenv_mirror.png">
+	<img src="./imgs/pipenv_mirror.png">
 </div>
 <div style="height:15px;"></div>
 
@@ -303,7 +303,7 @@ pipenv install
 ```
 
 <div align="center">
-	<img src="./pics/pipenv_shell.png">
+	<img src="./imgs/pipenv_shell.png">
 </div>
 <div style="height:15px;"></div>
 
@@ -318,7 +318,7 @@ exit
 ```
 
 <div align="center">
-	<img src="./pics/pipenv_exit.png">
+	<img src="./imgs/pipenv_exit.png">
 </div>
 
 ### 4.4 安装 Gunicorn 并启动项目
@@ -380,7 +380,7 @@ pipenv run gunicorn -w 2 Security.wsgi:application -k gthread -b 0.0.0.0:8000
 &emsp;&emsp;此时，虽然我们成功访问了，但是样式完全乱了。因为此前在本地使用的是 django 自带的开发服务器，它会自动处理静态样式文件，但 Gunicorn 不擅长处理静态文件，需要使用 Nginx 来启动静态样式。
 
 <div align="center">
-	<img src="./pics/nocss.png">
+	<img src="./imgs/nocss.png">
 </div>
 
 ## 五、配置并运行前端 dist
@@ -390,7 +390,7 @@ pipenv run gunicorn -w 2 Security.wsgi:application -k gthread -b 0.0.0.0:8000
 &emsp;&emsp;安装好 Xftp7 后，可以在 Xshell7 中右击数据库连接，使用 Xftp7 打开，然后直接拖拽本地打包好的 dist 文件即可。
 
 <div align="center">
-	<img src="./pics/dist.png">
+	<img src="./imgs/dist.png">
 </div>
 
 ### 5.2 配置 Nginx
@@ -412,7 +412,7 @@ sudo vim nginx.conf
 ```
 
 <div align="center">
-	<img src="./pics/nginx_conf.png">
+	<img src="./imgs/nginx_conf.png">
 </div>
 
 > 转到 nginx 项目定制目录
@@ -485,7 +485,7 @@ sudo nginx -t
 ```
 
 <div align="center">
-	<img src="./pics/nginx_success.png">
+	<img src="./imgs/nginx_success.png">
 </div>
 <div style="height:15px;"></div>
 
@@ -517,7 +517,7 @@ python3 manage.py collectstatic
 ```
 
 <div align="center">
-	<img src="./pics/static.png">
+	<img src="./imgs/static.png">
 </div>
 <div style="height:15px;"></div>
 
@@ -528,7 +528,7 @@ pipenv run gunicorn -w 2 Security.wsgi:application -k gthread -b 127.0.0.1:8000
 ```
 
 <div align="center">
-	<img src="./pics/has_css.png">
+	<img src="./imgs/has_css.png">
 </div>
 
 ## 六、使用 supervisor 管理进程
@@ -549,7 +549,7 @@ pip3 install supervisor
 ```
 
 <div align="center">
-	<img src="./pics/supervisor.png">
+	<img src="./imgs/supervisor.png">
 </div>
 <div style="height:15px;"></div>
 
@@ -709,7 +709,7 @@ stderr_logfile=/home/cveo/etc/supervisor/var/log/gunicorn-stderr.err
 日志输出和错误文件。
 
 <div align="center">
-	<img src="./pics/supervisor_gunicorn.png">
+	<img src="./imgs/supervisor_gunicorn.png">
 </div>
 
 ### 6.4 启动 Supervisor
@@ -742,7 +742,7 @@ exit
 ```
 
 <div align="center">
-	<img src="./pics/supervisorctl.png">
+	<img src="./imgs/supervisorctl.png">
 </div>
 
 ### 6.5 Supervisor 常用命令

@@ -2,6 +2,8 @@
 
 
 
+## Docker 安装
+
 下载 Docker Desktop
 
 https://docs.docker.com/desktop/install/windows-install/
@@ -28,7 +30,7 @@ RUN pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
 Docker Hub 提供很多镜像：https://hub.docker.com/search?q=Python
 
-![image-20230426144654613](./img/image-20230426144654613.png)
+![image-20230426144654613](./imgs/image-20230426144654613.png)
 
 
 
@@ -79,5 +81,15 @@ docker run -it --rm -p 8888:8888 -v E:/github/open-geo-tutorial/:/home/jovyan/re
 
 ```
 172032d3ef1ce8e053d71681eb0343a3d87a3e5597ebd56b
+```
+
+
+
+## Docker 基本命令
+
+查看最近1000行的容器日志
+
+```
+docker logs --tail 1000 <容器ID或名称>
 ```
 
