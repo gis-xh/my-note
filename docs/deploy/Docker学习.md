@@ -92,4 +92,3 @@ docker run -it --rm -p 8888:8888 -v E:/github/open-geo-tutorial/:/home/jovyan/re
 ```
 docker logs --tail 1000 <容器ID或名称>
 ```
-
