@@ -2,18 +2,19 @@
 
 ## 1 安装 node.js
 
-&emsp;&emsp;[Node.js 中文网](http://nodejs.cn/download/)
+&emsp;&emsp;[Node.js 官网](https://nodejs.org/en/download)
 
-![](vue_files/1.jpg)
+![image-20250201204211294](./imgs/image-20250201204211294.png)
 
 &emsp;&emsp;安装过程很简单，中途注意修改安装位置到其他盘，其余下一步即可。
-安装结束后在 cmd 命令窗口中输入指令，查看是否安装成功。【要求：安装路径不得有空格和中文】
+
+&emsp;&emsp;安装结束后在 cmd 命令窗口中输入指令，查看是否安装成功。【要求：安装路径不得有空格和中文】
 
 ```
 node -v
 ```
 
-![](vue_files/2.jpg)
+![image-20250201204413843](./imgs/image-20250201204413843.png)
 
 ## 2 配置 npm 全局安装包路径
 
@@ -25,13 +26,13 @@ node -v
 npm root -g
 ```
 
-![](vue_files/3.jpg)
+![](imgs/3.jpg)
 
 > 在 nodejs 文件夹中创建文件夹
 
-&emsp;&emsp;创建 `node_global` `node_cache` 两个新文件夹。
+&emsp;&emsp;创建 `node_global`，`node_cache`，`yarn` 三个新文件夹。
 
-![](vue_files/4.jpg)
+![image-20250201204800673](./imgs/image-20250201204800673.png)
 
 ### 2.2 修改 npm 全局安装包路径
 
@@ -53,11 +54,11 @@ npm config set cache "D:\program\nodejs\node_cache"
 
 > 环境变量 → 系统变量 → path → 新建
 
-![](vue_files/5.jpg)
+![](imgs/5.jpg)
 
-> 环境变量 → 系统变量 → 新建 → node_path
+> 环境变量 → 系统变量 → 新建 → `NODE_PATH`
 
-![](vue_files/6.jpg)
+![](imgs/6.jpg)
 
 > 再次查看默认安装路径
 
@@ -65,7 +66,7 @@ npm config set cache "D:\program\nodejs\node_cache"
 npm root -g
 ```
 
-![](vue_files/7.jpg)
+![](imgs/7.jpg)
 
 ## 3 安装并配置 yarn
 
@@ -83,7 +84,7 @@ npm i -g yarn
 yarn -v
 ```
 
-![](vue_files/8.jpg)
+![image-20250201205124832](./imgs/image-20250201205124832.png)
 
 ### 3.2 查看 yarn 的默认配置
 
@@ -99,11 +100,11 @@ yarn global dir
 yarn cache dir
 ```
 
-![](vue_files/9.jpg)
+![](imgs/9.jpg)
 
 ### 3.3 创建相应文件夹
 
-![](vue_files/10.jpg)
+![](imgs/10.jpg)
 
 ### 3.4 修改 yarn 全局安装位置和缓存位置
 
@@ -126,7 +127,7 @@ yarn global dir
 yarn cache dir
 ```
 
-![](vue_files/11.jpg)
+![](imgs/11.jpg)
 
 ### 3.5 修改镜像源
 
@@ -134,16 +135,17 @@ yarn cache dir
 yarn config set registry https://registry.npmmirror.com
 ```
 
-![](vue_files/12.jpg)
+![image-20250201205358017](./imgs/image-20250201205358017.png)
 
-注：此处是淘宝镜像源的最新位置。[npmmirror 中国镜像站](https://npmmirror.com/)
+NOTE：此处是淘宝镜像源的最新地址：[npmmirror 中国镜像站](https://npmmirror.com/)
 
-![](vue_files/13.jpg)
+![image-20250201205440923](./imgs/image-20250201205440923.png)
 
 ## 4 安装 cnpm
 
 &emsp;&emsp;因为 npm 安装插件是从国外服务器下载，可能出现异常，所以我们需要使用国内的淘宝镜像 cnpm 来加快包的下载速度。
-cnpm 完全沿用之前 npm 的所有配置，无需另外配置。
+
+&emsp;&emsp;cnpm 完全沿用之前 npm 的所有配置，无需另外配置。
 
 ```
 npm install -g cnpm --registry=https://registry.npmmirror.com
@@ -173,7 +175,7 @@ or
 vue --version
 ```
 
-![](vue_files/14.jpg)
+![](imgs/14.jpg)
 
 ## 参考文章
 
