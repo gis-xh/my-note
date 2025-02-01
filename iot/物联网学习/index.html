@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -52,9 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../mkdocs/css/no-footer.css">
+      <link rel="stylesheet" href="../../css/timeago.css">
     
       <link rel="stylesheet" href="../../mkdocs/css/unordered-list-symbols.css">
+    
+      <link rel="stylesheet" href="../../mkdocs/css/img-center.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -63,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -171,6 +182,11 @@
       </label>
       <nav class="md-search__options" aria-label="查找">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
@@ -198,7 +214,7 @@
         <a href="https://github.com/gis-xh/my-note" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
   </div>
   <div class="md-source__repository">
     my-note
@@ -451,7 +467,7 @@
       <a href="https://github.com/gis-xh/my-note" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
   </div>
   <div class="md-source__repository">
     my-note
@@ -473,6 +489,7 @@
   
   <span class="md-ellipsis">
     Study-Notes
+    
   </span>
   
 
@@ -493,6 +510,7 @@
   
   <span class="md-ellipsis">
     Somethings
+    
   </span>
   
 
@@ -532,6 +550,7 @@
   
   <span class="md-ellipsis">
     CesiumJS
+    
   </span>
   
 
@@ -557,6 +576,7 @@
   
   <span class="md-ellipsis">
     Cesium 学习笔记（一）
+    
   </span>
   
 
@@ -608,6 +628,7 @@
   
   <span class="md-ellipsis">
     Deep learning
+    
   </span>
   
 
@@ -633,6 +654,7 @@
   
   <span class="md-ellipsis">
     Keras 安装配置
+    
   </span>
   
 
@@ -654,6 +676,7 @@
   
   <span class="md-ellipsis">
     PyTorch 安装配置
+    
   </span>
   
 
@@ -698,6 +721,7 @@
   
   <span class="md-ellipsis">
     Keras
+    
   </span>
   
 
@@ -744,6 +768,7 @@
   
   <span class="md-ellipsis">
     01
+    
   </span>
   
 
@@ -769,6 +794,7 @@
   
   <span class="md-ellipsis">
     0101 测试 Keras 环境
+    
   </span>
   
 
@@ -790,6 +816,7 @@
   
   <span class="md-ellipsis">
     0102 深度学习基本概念
+    
   </span>
   
 
@@ -848,6 +875,7 @@
   
   <span class="md-ellipsis">
     02
+    
   </span>
   
 
@@ -873,6 +901,7 @@
   
   <span class="md-ellipsis">
     0201 多层认知神经网络模型训练 MNIST 手写数据集
+    
   </span>
   
 
@@ -894,6 +923,7 @@
   
   <span class="md-ellipsis">
     0202 TensorBoard 监控模型
+    
   </span>
   
 
@@ -915,6 +945,7 @@
   
   <span class="md-ellipsis">
     0203 回调函数监控训练状态
+    
   </span>
   
 
@@ -936,6 +967,7 @@
   
   <span class="md-ellipsis">
     0204 训练早停
+    
   </span>
   
 
@@ -957,6 +989,7 @@
   
   <span class="md-ellipsis">
     0205 AUC 指标计算
+    
   </span>
   
 
@@ -978,6 +1011,7 @@
   
   <span class="md-ellipsis">
     0206 AP 指标计算
+    
   </span>
   
 
@@ -1026,6 +1060,7 @@
   
   <span class="md-ellipsis">
     03
+    
   </span>
   
 
@@ -1051,6 +1086,7 @@
   
   <span class="md-ellipsis">
     迁移学习
+    
   </span>
   
 
@@ -1120,6 +1156,7 @@
   
   <span class="md-ellipsis">
     Deploy
+    
   </span>
   
 
@@ -1145,6 +1182,7 @@
   
   <span class="md-ellipsis">
     Docker 学习
+    
   </span>
   
 
@@ -1166,6 +1204,7 @@
   
   <span class="md-ellipsis">
     项目部署全过程记录
+    
   </span>
   
 
@@ -1187,6 +1226,7 @@
   
   <span class="md-ellipsis">
     阿里云部署踩坑记录
+    
   </span>
   
 
@@ -1208,6 +1248,7 @@
   
   <span class="md-ellipsis">
     部署运维学习
+    
   </span>
   
 
@@ -1257,6 +1298,7 @@
   
   <span class="md-ellipsis">
     Frontend
+    
   </span>
   
 
@@ -1282,6 +1324,7 @@
   
   <span class="md-ellipsis">
     vue 前端环境配置全过程记录
+    
   </span>
   
 
@@ -1330,6 +1373,7 @@
   
   <span class="md-ellipsis">
     Vue
+    
   </span>
   
 
@@ -1355,6 +1399,7 @@
   
   <span class="md-ellipsis">
     Vue2toVue3
+    
   </span>
   
 
@@ -1376,6 +1421,7 @@
   
   <span class="md-ellipsis">
     Vue3 setup 语法糖下的 ECharts 使用
+    
   </span>
   
 
@@ -1397,6 +1443,7 @@
   
   <span class="md-ellipsis">
     Vue3 setup 语法糖下的 Element-Plus 使用
+    
   </span>
   
 
@@ -1418,6 +1465,7 @@
   
   <span class="md-ellipsis">
     Vue学习记录
+    
   </span>
   
 
@@ -1439,6 +1487,7 @@
   
   <span class="md-ellipsis">
     前端基础知识
+    
   </span>
   
 
@@ -1497,6 +1546,7 @@
   
   <span class="md-ellipsis">
     Iot
+    
   </span>
   
 
@@ -1531,6 +1581,7 @@
   
   <span class="md-ellipsis">
     IOTDB快速上手学习
+    
   </span>
   
 
@@ -1542,6 +1593,7 @@
   
   <span class="md-ellipsis">
     IOTDB快速上手学习
+    
   </span>
   
 
@@ -1642,6 +1694,7 @@
   
   <span class="md-ellipsis">
     Linux
+    
   </span>
   
 
@@ -1667,6 +1720,7 @@
   
   <span class="md-ellipsis">
     00 Linux
+    
   </span>
   
 
@@ -1711,6 +1765,7 @@
   
   <span class="md-ellipsis">
     01Linux基础
+    
   </span>
   
 
@@ -1736,6 +1791,7 @@
   
   <span class="md-ellipsis">
     0101 安装配置 Linux
+    
   </span>
   
 
@@ -1757,6 +1813,7 @@
   
   <span class="md-ellipsis">
     0102 虚拟机基本操作
+    
   </span>
   
 
@@ -1778,6 +1835,7 @@
   
   <span class="md-ellipsis">
     0103 Linux 基础
+    
   </span>
   
 
@@ -1830,6 +1888,7 @@
   
   <span class="md-ellipsis">
     02Linux实操
+    
   </span>
   
 
@@ -1855,6 +1914,7 @@
   
   <span class="md-ellipsis">
     0201 Linux 远程操作
+    
   </span>
   
 
@@ -1876,6 +1936,7 @@
   
   <span class="md-ellipsis">
     0202 Linux 用户管理
+    
   </span>
   
 
@@ -1897,6 +1958,7 @@
   
   <span class="md-ellipsis">
     0203 Linux 网络配置
+    
   </span>
   
 
@@ -1945,6 +2007,7 @@
   
   <span class="md-ellipsis">
     03Linux&Python
+    
   </span>
   
 
@@ -1970,6 +2033,7 @@
   
   <span class="md-ellipsis">
     0301 Linux 下的 Python
+    
   </span>
   
 
@@ -2027,6 +2091,7 @@
   
   <span class="md-ellipsis">
     Machine learning
+    
   </span>
   
 
@@ -2052,6 +2117,7 @@
   
   <span class="md-ellipsis">
     吴恩达机器学习系列课程学习记录（一）
+    
   </span>
   
 
@@ -2092,6 +2158,7 @@
   
   <span class="md-ellipsis">
     Week 1
+    
   </span>
   
 
@@ -2117,6 +2184,7 @@
   
   <span class="md-ellipsis">
     01
+    
   </span>
   
 
@@ -2186,6 +2254,7 @@
   
   <span class="md-ellipsis">
     Python
+    
   </span>
   
 
@@ -2238,6 +2307,7 @@
   
   <span class="md-ellipsis">
     01conda
+    
   </span>
   
 
@@ -2263,6 +2333,7 @@
   
   <span class="md-ellipsis">
     Win11 安装配置 Miniconda 全过程记录
+    
   </span>
   
 
@@ -2323,6 +2394,7 @@
   
   <span class="md-ellipsis">
     02data analysis
+    
   </span>
   
 
@@ -2375,6 +2447,7 @@
   
   <span class="md-ellipsis">
     Matplotlib
+    
   </span>
   
 
@@ -2400,6 +2473,7 @@
   
   <span class="md-ellipsis">
     01 Matplotlib 库入门
+    
   </span>
   
 
@@ -2450,6 +2524,7 @@
   
   <span class="md-ellipsis">
     Numpy
+    
   </span>
   
 
@@ -2498,6 +2573,7 @@
   
   <span class="md-ellipsis">
     01NumPy库入门
+    
   </span>
   
 
@@ -2523,6 +2599,7 @@
   
   <span class="md-ellipsis">
     0101 Python 数据分析学习环境配置
+    
   </span>
   
 
@@ -2544,6 +2621,7 @@
   
   <span class="md-ellipsis">
     0102 NumPy 库基础操作
+    
   </span>
   
 
@@ -2565,6 +2643,7 @@
   
   <span class="md-ellipsis">
     0103 NumPy QuickStart 翻译
+    
   </span>
   
 
@@ -2617,6 +2696,7 @@
   
   <span class="md-ellipsis">
     02NumPy数据存取与函数
+    
   </span>
   
 
@@ -2642,6 +2722,7 @@
   
   <span class="md-ellipsis">
     0201 NumPy 数据存取
+    
   </span>
   
 
@@ -2663,6 +2744,7 @@
   
   <span class="md-ellipsis">
     0202 WordCloud 词云统计
+    
   </span>
   
 
@@ -2684,6 +2766,7 @@
   
   <span class="md-ellipsis">
     0203 NumPy 常用函数
+    
   </span>
   
 
@@ -2740,6 +2823,7 @@
   
   <span class="md-ellipsis">
     Python excel
+    
   </span>
   
 
@@ -2765,6 +2849,7 @@
   
   <span class="md-ellipsis">
     01
+    
   </span>
   
 
@@ -2813,6 +2898,7 @@
   
   <span class="md-ellipsis">
     Spider
+    
   </span>
   
 
@@ -2838,6 +2924,7 @@
   
   <span class="md-ellipsis">
     Python 网络爬虫笔记
+    
   </span>
   
 
@@ -2900,6 +2987,7 @@
   
   <span class="md-ellipsis">
     03django
+    
   </span>
   
 
@@ -2925,6 +3013,7 @@
   
   <span class="md-ellipsis">
     01 Django 开发环境配置
+    
   </span>
   
 
@@ -2946,6 +3035,7 @@
   
   <span class="md-ellipsis">
     02 Django 官网示例
+    
   </span>
   
 
@@ -2967,6 +3057,7 @@
   
   <span class="md-ellipsis">
     03 Django 项目实战（一）
+    
   </span>
   
 
@@ -2988,6 +3079,7 @@
   
   <span class="md-ellipsis">
     04 Django 项目实战（二）
+    
   </span>
   
 
@@ -3036,6 +3128,7 @@
   
   <span class="md-ellipsis">
     04pyqt
+    
   </span>
   
 
@@ -3061,6 +3154,7 @@
   
   <span class="md-ellipsis">
     0401 PyQt5 开发环境配置
+    
   </span>
   
 
@@ -3109,6 +3203,7 @@
   
   <span class="md-ellipsis">
     05fastapi
+    
   </span>
   
 
@@ -3134,6 +3229,7 @@
   
   <span class="md-ellipsis">
     01
+    
   </span>
   
 
@@ -3223,7 +3319,9 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+
                   
+
 
   
   
@@ -3231,7 +3329,7 @@
 
 <h1 id="iotdb">IOTDB快速上手学习<a class="headerlink" href="#iotdb" title="Permanent link">&para;</a></h1>
 <h2 id="_1">一、基本概念<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p><img alt="cb2c7ccc8407ad8db687641888c9d2d3" src="../img/cb2c7ccc8407ad8db687641888c9d2d3.png" /></p>
+<p><a class="glightbox" href="../img/cb2c7ccc8407ad8db687641888c9d2d3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cb2c7ccc8407ad8db687641888c9d2d3" src="../img/cb2c7ccc8407ad8db687641888c9d2d3.png" /></a></p>
 <p>数据库结构：IoTDB 采用树形结构定义数据模式</p>
 <p>测点：多个数据点按时间戳递增排列形成的一个时间序列，通常一个测点代表一个采集点位，能够定期采集所在环境的物理量。</p>
 <p>元数据模板：具有相同的字段名称和类型的采集物理量，如上图中的status，可以采用模板</p>
@@ -3247,7 +3345,7 @@
 <li>支持写入空值</li>
 </ul>
 <p>示例：ln 电力集团、wf01 风电场的实体 wt01 有名为 status 的物理量，其时间序列表示为：<code>root.ln.wf01.wt01.status</code></p>
-<p><img alt="440fc98f4039426f321d4131bfa3f792" src="../img/440fc98f4039426f321d4131bfa3f792.png" /></p>
+<p><a class="glightbox" href="../img/440fc98f4039426f321d4131bfa3f792.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="440fc98f4039426f321d4131bfa3f792" src="../img/440fc98f4039426f321d4131bfa3f792.png" /></a></p>
 <h2 id="_2">二、官网教程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Python 原生接口：https://iotdb.apache.org/zh/UserGuide/latest/API/Programming-Python-Native-API.html</li>
@@ -3283,17 +3381,79 @@
 </ul>
 
 
+<!-- taken from 
+https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
+
+<hr />
+<div class="md-source-file">
+    <small>
+
+        <!-- mkdocs-git-revision-date-localized-plugin -->
+        
+        最后更新:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-12-06T15:31:28+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-12-06</span>
+        
+        <br />
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-12-06T15:31:28+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-12-06</span>
+        
+
+        <!-- mkdocs-git-revision-date-plugin -->
+        
+
+        <br />
+        
+        作者:
+        <span class='git-page-authors git-authors'><a href='mailto:xhong_17@outlook.com'>xhong</a></span>
+        
+    </small>
+</div>
 
 
 
 
+<!-- Insert Giscus generated snippet here -->
+<!-- 插入 Giscus 生成的代码块 -->
+<script src="https://giscus.app/client.js" data-repo="gis-xh/mkdocs-site" data-repo-id="R_kgDOJqGKjQ"
+    data-category="Announcements" data-category-id="DIC_kwDOJqGKjc4CW4Tq" data-mapping="pathname" data-strict="0"
+    data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme"
+    data-lang="zh-CN" crossorigin="anonymous" async>
+    </script>
 
+<!-- 下面保持不动即可 -->
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
 
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        giscus.setAttribute("data-theme", theme)
+    }
 
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate" ? "dark" : "light"
 
-
+                /* Instruct Giscus to change theme */
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
 
                 
+
+
               </article>
             </div>
           
@@ -3311,12 +3471,52 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../../frontend/vue/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 前端基础知识">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                前端基础知识
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../linux/00Linux/" class="md-footer__link md-footer__link--next" aria-label="下一页: 00 Linux">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                00 Linux
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 gis-xh
+      Copyright &copy; 2025 gis-xh
     </div>
   
   
@@ -3334,7 +3534,7 @@
     
     
     <a href="https://github.com/gis-xh" target="_blank" rel="noopener" title="GitHub | gis-xh" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -3349,17 +3549,23 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.tabs", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5090c770.min.js"></script>
+      
+        <script src="../../js/timeago.min.js"></script>
+      
+        <script src="../../js/timeago_mkdocs_material.js"></script>
       
         <script src="../../mkdocs/js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
