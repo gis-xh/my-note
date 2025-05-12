@@ -92,3 +92,36 @@ docker run -it --rm -p 8888:8888 -v E:/github/open-geo-tutorial/:/home/jovyan/re
 ```
 docker logs --tail 1000 <容器ID或名称>
 ```
+
+查看已有镜像的磁盘占用
+
+```sh
+docker system df
+```
+
+【详细】查看已有镜像的磁盘占用
+
+```sh
+docker system df -v
+```
+
+### 清理不需要的资源
+
+删除所有已停止的容器
+
+```sh
+docker container prune
+```
+
+删除所有未使用的镜像
+
+```sh
+docker image prune -a
+```
+
+清理所有未使用的本地卷，删除容器/镜像时不会被自动删除，需要手动删除
+
+```sh
+docker volume prune -a
+```
+
